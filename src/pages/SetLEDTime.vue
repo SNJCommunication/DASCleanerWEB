@@ -20,14 +20,14 @@
             <div>
               <div class="menubtn">
                 <input type="number" v-model="ultra" />
-                <span>초</span>
+                <span>분</span>
               </div>
               <div>살균</div>
             </div>
             <div>
               <div class="menubtn">
                 <input type="number" v-model="light" />
-                <span>초</span>
+                <span>분</span>
               </div>
               <div>선라이크</div>
             </div>

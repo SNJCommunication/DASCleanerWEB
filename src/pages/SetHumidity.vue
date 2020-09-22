@@ -43,11 +43,12 @@
 export default {
   data: function () {
     return {
-      humidity: "0",
+      humidity: this.$store.state.humidity,
     };
   },
   methods: {
     setHumidity: function () {
+      this.$store.state.humidity = this.humidity;
       window.DasApp.setHumidity(this.humidity);
     },
   },

@@ -43,11 +43,16 @@
 export default {
   data: function () {
     return {
-      temperature: "0",
+      temperature: this.$store.state.temperature,
     };
+  },
+  created: function () {
+    // console.log(this.$store);
   },
   methods: {
     setTemperature: function () {
+      // this.$store.commit("settemperature");
+      this.$store.state.temperature = this.temperature;
       window.DasApp.setTemperature(this.temperature);
     },
     getTemperature: function (t) {
